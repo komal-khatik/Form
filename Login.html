@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <!-- <link rel="stylesheet" href="  https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css"> -->
+  <link rel="stylesheet" 
+  href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        background-image: url("images\ \(1\).jpg");
+        background-repeat: no-repeat;
+       background-size: cover;
+    
+
+    }
+    *{
+        box-sizing: border-box;
+
+    }
+    .container{
+        display: flex;
+        /* display: -ms-flexbox; */
+        width: 100%;
+        margin-bottom: 15px;
+        font-size: 18px;
+
+
+
+    }
+    .icon{
+        padding: 10px;
+        background: #004d00;
+        color: white;
+        width: 50px;
+        text-align: center;
+    }
+    .input-field{
+        width: 100%;
+        padding: 10px;
+        outline: none;
+        font-size: 18px;
+
+
+    }
+    .input-field:focus{
+        border: 2px solid #004d00 ;
+    }
+    .btn{
+        background-color:pink;
+        color: white;
+        padding: 15px;
+        border: none;
+        cursor: pointer;
+        opacity: 0.9;
+        font-size: 18px;
+        border-radius: 10px;
+       
+
+    }
+    .btn:hover{
+        opacity: 1;
+    }
+    input:valid{
+        background-color:aqua;
+    }
+</style>
+</head>
+<body>
+    <form style="width:600px; margin:auto">
+        <h2 style="text-align:center ; font: size 40px; color: aliceblue;">Login Form  </h2>
+        <div class="container">
+            <i class="fa fa-user icon"></i>
+            <input type="text" name="username" placeholder="Username" pattern=[A-Za-z]+ class="input-field">
+
+        </div>
+        <div class="container">
+            <i class="fa fa-envelope-o icon"></i>
+            <input type="email" name="email" placeholder="Email" class="input-field">
+
+        </div>
+        <div class="container">
+            <i class="fa fa-key icon"></i>
+            <input type="password" name="psw" placeholder="Password" class="input-field">
+
+        </div>
+      
+        <button type="submit" class="btn"><a href="Registration.html" style="color:black ; text-decoration: none; ">Login</a></button>
+    </form>
+    
+</body>
+</html>
